@@ -7,8 +7,8 @@ config = configparser.ConfigParser()
 #Read from config file
 config.read('keys.ini')
 
-#Uses keys defined in the config.ini file to authenticat connection with twitter account
-#Don't forget to add your keys to config.ini
+#Uses keys defined in the keys.ini file to authenticat connection with twitter account
+#Don't forget to add your keys to keys.ini
 auth = tweepy.OAuthHandler(config['OAuth']['public'], config['OAuth']['private'])
 auth.set_access_token(config['AccessToken']['public'],config['AccessToken']['private'])
 
