@@ -1,5 +1,5 @@
 # csa-pybot
-
+See `reference.py` for some Python 3 basics.
 ## Getting Your Twitter Dev Keys
 1.  Go to https://dev.twitter.com/, click "My apps", and sign in or create an account.
 2.  Click "Create New App", give it a name and put whatever in the Description and Website fields.
