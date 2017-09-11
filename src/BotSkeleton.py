@@ -5,7 +5,7 @@ import configparser
 config = configparser.ConfigParser()
 
 #Read from config file
-config.read('keys.ini')
+config.read('../keys.ini')
 
 #Uses keys defined in the keys.ini file to authenticat connection with twitter account
 #Don't forget to add your keys to keys.ini
@@ -15,4 +15,5 @@ auth.set_access_token(config['AccessToken']['public'],config['AccessToken']['pri
 #Initialize tweepy api with authentication keys
 api = tweepy.API(auth,wait_on_rate_limit=True,wait_on_rate_limit_notify=True) 
 
+#TODO: Rename this file
 #TODO: Add twitter bot stuff
