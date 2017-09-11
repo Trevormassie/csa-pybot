@@ -148,7 +148,7 @@ another_dict["something_else"] = False  # This adds "something_else" : False to 
 ########################################################################################################################
 # CLASSES 
 # Not necessary in small programs. Often can get the same functionality through normal functions
-# Note that 'getter' and 'setter' methods are completey unecessary in Python classes
+# Note that 'getter' and 'setter' methods are completey unecessary in Python classes since variables can't really be private
 
 class Hamburger:
     def __init__(self, burger_count, burger_color):  # Constructor. 'self' = 'this' in Java
