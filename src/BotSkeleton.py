@@ -4,7 +4,7 @@ import configparser
 #Initialize parser for reading config file
 config = configparser.ConfigParser()
 
-#Read from config file
+#Read from config file in the above directory
 config.read('../keys.ini')
 
 #Uses keys defined in the keys.ini file to authenticat connection with twitter account
