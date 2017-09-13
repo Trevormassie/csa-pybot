@@ -63,24 +63,8 @@ while True:  # indent whatever's within the loop
     print("True foreverrr")
     break # breaks out of the loop because we actually dont want an infinite loop :P
 while 7 <= 8:
-    print("Infinity and beyond!")
-    break # Oh wait, not infinity. We just broke the loop
-
-########################################################################################################################
-# FOR LOOPS
-for i in dog_list: # reminder: dog_list = [dog_type, good_dogs, "some string", 4134214, 'something  ', 3.14]
-    if i == "some string":
-        continue # Move on in the loop - (won't hit the print(i) statement)
-    print(i)  # Loops through dog_list and prints every item itself
-
-for j in range(0, 100):
-    print(j)  # Prints numbers in the range from 0 to 99
-
-for some_var in range(0, len(dog_list) - 1):
-    print(some_var)  # Prints the index number of every item in the list (0 through 5)
-
-for index, item in enumerate(dog_list):
-    print("INDEX: " + str(index) + ", ITEM: " + str(item))  # prints the index and item at the same time
+    print("Infinity and beyond?")
+    break 
     
 ########################################################################################################################
 # IF STATEMENTS
@@ -115,6 +99,22 @@ if blah and not blerg:  # Use 'and', 'or', and 'not'. True statement.
     print("trurreeeee")
 if blork is None:  # True
     print("tttrrrruueee. blork is indeed None")
+########################################################################################################################
+# FOR LOOPS
+for i in dog_list: # reminder: dog_list = [dog_type, good_dogs, "some string", 4134214, 'something  ', 3.14]
+    if i == 3.14:
+        continue # Move on in the loop - (won't hit the print(i) statement)
+    print(i)  # Loops through dog_list and prints every item itself
+
+for j in range(0, 100):
+    print(j)  # Prints numbers in the range from 0 to 99
+
+for some_var in range(0, len(dog_list) - 1):
+    print(some_var)  # Prints the index number of every item in the list (0 through 5)
+
+for index, item in enumerate(dog_list):
+    print("INDEX: " + str(index) + ", ITEM: " + str(item))  # prints the index and item at the same time
+    
 ########################################################################################################################
 # USER INPUT AND TRY...EXCEPT
 while True: # Putting this in an infinite loop until a good input is entered.
