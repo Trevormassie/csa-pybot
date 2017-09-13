@@ -3,8 +3,10 @@
 # Single line comments start with a '#'
 
 '''
-multi-line comments start and end with 3 apostrophes
-or quotation marks
+multi-line comments start and end with 3 apostrophes or quotation marks
+Sections in this mini guide:
+VARIABLES, PRINTING/TYPE-CASTING, IMPORT STATEMENTS, LISTS, WHILE, FOR, IF/ELIF/ELSE, INPUT/TRY...EXCEPT, FUNCTIONS,
+    DICTIONARIES, CLASSES, STRING SPLICING
 '''
 
 ########################################################################################################################
@@ -111,7 +113,22 @@ if blah and not blerg:  # Use 'and', 'or', and 'not'. True statement.
     print("trurreeeee")
 if blork is None:  # True
     print("tttrrrruueee. blork is indeed None")
+########################################################################################################################
+# USER INPUT AND TRY...EXCEPT
+while True: # Putting this in an infinite loop until a good input is entered.
+    my_input = input("Enter a number:") # my_input is a string! Lets convert it to an int.
+    # Normally we would do converted_value = int(my_input)  
+    # But what if we can't convert the input to an integer (user enters a letter/something else)?
+    #   It will throw an exception if can't convert the value, so let's catch the exception.
+    try:
+        converted_value = int(my_input) # Try to convert it, if it fails then we move to the except block
+        break # Exit the while loop because the conversion was successful!
+    except Exception as e: # (broadly) catch the exception and store the error message in 'e'
+        print("Invalid Input:" + str(e)) # Print the error message and restart the loop
 
+# Note that when catching exceptions it's good practice to be more specific in what type of exception you're catching.
+# 'except Exception as e' catches MOST exception types, but we might want to deal with each exception type differently
+# 'except ValueError as e' is better practice, but it doesn't really matter in this example.
 ########################################################################################################################
 # FUNCTIONS/METHODS - note that a method is a function, but inside a class
 def doggo_speak(number_of_borks_to_give):  # Declare the function with a single parameter
