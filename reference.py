@@ -8,7 +8,7 @@ or quotation marks
 '''
 
 ########################################################################################################################
-# DECLARING VARIABLES - Can be string, int, or float
+# DECLARING VARIABLES - Can be string, int, float, boolean (or other types: dict, list, set, tuple, byte, etc)
 dog_type = "good"  # can use apostrophes or quotation marks, it doesnt matter
 dog_color = 'green'
 doggo_count = 99999
