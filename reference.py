@@ -61,15 +61,17 @@ dog_list.append("heckin good")  # appends this string to the end of the list
 # WHILE LOOPS 
 while True:  # indent whatever's within the loop
     print("True foreverrr")
-    break # exit the loop! Use 'continue' to move on in a loop
+    break # breaks out of the loop because we actually dont want an infinite loop :P
 while 7 <= 8:
-    print("True foreverrrr")
-    break # Oh wait, not true forever. We just broke the loop
+    print("Infinity and beyond!")
+    break # Oh wait, not infinity. We just broke the loop
 
 ########################################################################################################################
 # FOR LOOPS
-for i in dog_list:
-    print(i)  # Loops through dog_list and prints every item
+for i in dog_list: # reminder: dog_list = [dog_type, good_dogs, "some string", 4134214, 'something  ', 3.14]
+    if i == "some string":
+        continue # Move on in the loop - (won't hit the print(i) statement)
+    print(i)  # Loops through dog_list and prints every item itself
 
 for j in range(0, 100):
     print(j)  # Prints numbers in the range from 0 to 99
