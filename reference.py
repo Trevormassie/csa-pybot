@@ -174,7 +174,7 @@ class Hamburger:
 
     def extreme_burger_multiplier(self, multiplier):  # A method. Must have 'self' in its parameters!
         self.burger_count *= multiplier  # Multiplies and sets burger_count to the product
-        if self.burger_count >= 9000:
+        if self.burger_count > 9000:
             print("ITS OVER an acceptable limit of burgers we are allowed to carry")
 
 
